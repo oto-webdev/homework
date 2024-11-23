@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/icon.svg">
+    <title>myhome</title>
+</head>
+<body>
+    
+    <h1>ბინები</h1>
+
+    <form action="https://www.myhome.ge/search">
+        <p>გარიგების ტიპი:</p>
+        <label><input type="radio" name="transaction_type" id="sell"> იყიდება</label><br>
+        <label><input type="radio" name="transaction_type" id="rent"> ქირავდება</label><br>
+        <label><input type="radio" name="transaction_type" id="mortgage"> გირავდება</label>
+    
+        <p>უძრავი ქონების ტიპი:</p>
+        <label><input type="radio" name="property_type" id="apartments"> ბინები</label><br>
+        <label><input type="radio" name="property_type" id="houses"> სახლები</label><br>
+        <label><input type="radio" name="property_type" id="lands"> მიწის ნაკვეთები</label>
+    
+        <p>ვალუტა:</p>
+        <label><input type="radio" name="currency" id="gel"> ლარი</label><br>
+        <label><input type="radio" name="currency" id="usd"> დოლარი</label><br><br>
+    
+        <label for="min_price">ფასი (მინიმალური და მაქსიმალური):</label><br>
+        <input type="text" name="min_price" id="min_price" placeholder="მინ. ფასი">
+        <input type="text" name="max_price" id="max_price" placeholder="მაქს. ფასი"><br><br>
+    
+        <label for="min_area">ფართი:</label><br>
+        <input type="text" name="min_area" id="min_area" placeholder="მინ.">
+        <input type="text" name="max_area" id="max_area" placeholder="მაქს.">
+    
+        <p>ოთახების რაოდენობა:</p>
+        <select name="rooms">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select><br><br>
+    
+        <label>ქონების სტატუსი:</label><br>
+        <label><input type="checkbox" name="status_new" id="status_new"> ახალი აშენებული</label><br>
+        <label><input type="checkbox" name="status_old" id="status_old"> ძველი აშენებული</label><br>
+        <label><input type="checkbox" name="status_under_construction" id="status_under_construction"> მშენებარე</label><br><br>
+    
+        <input type="submit" value="ძებნა">
+    </form>    
+
+</body>
+</html>

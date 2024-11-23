@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.svg">
+    <title>ფილმების ძებნის ფორმა</title>
+</head>
+<body>
+    
+    <h1>ფილმების ძებნის ფორმა</h1>
+
+    <form action="https://www.ge.movie/filter-movies">
+
+        <label for="movie">რა გსურთ ეძებოთ:</label><br>
+        <select name="movie" id="movie">
+            <option value="film">ფილმი</option>
+            <option value="series">სერიალი</option>
+            <option value="all">ყველაფერი</option>
+        </select><br><br>
+
+        <label for="genre">ჟანრები:</label><br>
+        <select name="genre" id="genre">
+            <option value="">არჩევა...</option>
+            <option value="detective">დეტექტივი</option>
+            <option value="comedy">კომედია</option>
+            <option value="fantasy">ფანტასტიკა</option>
+            <option value="drama">დრამა</option>
+            <option value="horror">საშინელება</option>
+        </select><br><br>
+
+        <label for="lang">ენა:</label><br>
+        <select name="lang" id="lang">
+            <option value="">არჩევა...</option>
+            <option value="georgian">ქართული</option>
+            <option value="english">ინგლისური</option>
+            <option value="french">ფრანგული</option>
+        </select><br><br>
+
+        <label for="country">ქვეყნები:</label><br>
+        <select name="country" id="country">
+            <option value="">არჩევა...</option>
+            <option value="usa">აშშ</option>
+            <option value="uk">ინგლისური</option>
+            <option value="georgia">ქართული</option>
+        </select><br><br>
+
+        <label for="rating">IMDb რეიტინგი: 1-10</label><br>
+        <input type="number" name="rating" id="rating"><br><br>
+
+        <label for="publishYearFrom">გამოსვლის წელი: 1920-2024</label><br>
+        <input type="text" name="publishYearFrom" id="publishYearFrom">
+        <input type="text" name="publishYearTo" id="publishYearTo"><br><br>
+
+        <input type="submit" value="ძებნა">
+
+    </form>
+
+</body>
+</html>

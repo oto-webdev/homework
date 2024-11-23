@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.svg">
+    <title>მანქანების ძებნის ფორმა</title>
+</head>
+<body>
+
+    <h1>მანქანების ძებნის ფორმა</h1>
+
+    <form action="https://www.myauto.ge/ka">
+
+        <label for="brand">მანქანის ბრენდი:</label><br>
+        <select name="brand" id="brand">
+            <option value="">არჩევა...</option>
+            <option value="toyota">ტოიოტა</option>
+            <option value="bmw">ბმვ</option>
+            <option value="mercedes">მერსედესი</option>
+            <option value="audi">აუდი</option>
+            <option value="ford">ფორდი</option>
+        </select><br><br>
+
+        <label for="model">მანქანის მოდელი:</label><br>
+        <select name="model" id="model">
+            <option value="">არჩევა...</option>
+            <option value="corolla">კოროლა</option>
+            <option value="x5">X5</option>
+            <option value="c-class">C-Class</option>
+            <option value="a4">A4</option>
+            <option value="mustang">Mustang</option>
+        </select><br><br>
+
+        <label for="bodyType">კორპუსის ტიპი:</label><br>
+        <select name="bodyType" id="bodyType">
+            <option value="">არჩევა...</option>
+            <option value="sedan">სედანი</option>
+            <option value="hatchback">ჰაბჩეკი</option>
+            <option value="suv">SUV</option>
+            <option value="coupe">კუპე</option>
+            <option value="convertible">კაპრიოლეტი</option>
+        </select><br><br>
+
+        <label for="transmission">ტრანსიმიცია:</label><br>
+        <select name="transmission" id="transmission">
+            <option value="">არჩევა...</option>
+            <option value="automatic">ავტომატური</option>
+            <option value="manual">მექანიკური</option>
+        </select><br><br>
+
+        <label for="fuelType">საწვავის ტიპი:</label><br>
+        <select name="fuelType" id="fuelType">
+            <option value="">არჩევა...</option>
+            <option value="petrol">ბენზინი</option>
+            <option value="diesel">დიზელი</option>
+            <option value="electric">ელექტრო</option>
+            <option value="hybrid">ჰიბრიდი</option>
+        </select><br><br>
+
+        <label for="yearFrom">გამოსვლის წელი:</label><br>
+        <input type="text" name="yearFrom" id="yearFrom" placeholder="მაგ. 2000">
+        <input type="text" name="yearTo" id="yearTo" placeholder="მაგ. 2024"><br><br>
+
+        <label for="priceFrom">ფასის დიაპაზონი:</label><br>
+        <input type="number" name="priceFrom" id="priceFrom" placeholder="მაგ. 1000">
+        <input type="number" name="priceTo" id="priceTo" placeholder="მაგ. 50000"><br><br>
+
+        <label for="mileageFrom">მილის დიაპაზონი:</label><br>
+        <input type="number" name="mileageFrom" id="mileageFrom" placeholder="მაგ. 0">
+        <input type="number" name="mileageTo" id="mileageTo" placeholder="მაგ. 500000"><br><br>
+
+        <input type="submit" value="ძებნა">
+
+    </form>
+
+</body>
+</html>
