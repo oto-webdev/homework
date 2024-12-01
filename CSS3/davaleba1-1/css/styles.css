@@ -1,0 +1,71 @@
+#heading {
+    text-align: center;
+    color: #8E26C0;
+    font-size: 64px;
+    font-weight: 800;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 84.48px;
+}
+
+#subtitle {
+    background-color: #FFE8E8;
+    width: 446px;
+}
+
+#subtitle-text {
+    width: 446px;
+    color: #ff0000;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    font-family: 'Lato';
+    text-align: center;
+}
+
+#offer {
+    border: #0055FF 6px solid;
+    width: 1023px;
+}
+
+#offer-text { 
+    color: #85647B;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#sale {
+    background-color: #FFE8E8;
+    width: 1023px;
+}
+
+#sale-text {
+    width: 943px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 38.4px;
+    font-family: 'Lato';
+    color: gray;
+    text-align: center;
+}
+
+#line {
+    color: red;
+}
+
+#last {
+    border: 2px solid #3538CD;
+    width: 1069px;
+}
+
+#last-text {
+    width: 969px;
+    text-align: right;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    font-family: 'Lato';
+    color: #0064CE;
+}
