@@ -1,0 +1,123 @@
+#heading {
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86.4px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#layout-1 {
+    width: 568px;
+    height: 866px;
+}
+
+#subhead {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: black;
+}
+
+#subtitle {
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+}
+
+#subtext {
+    color: #155EEF;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#btn {
+    color: #CEA201;
+    border: 2px solid #CEA201;
+    text-align: center;
+    width: 177px;
+    height: 56px;
+    background-color: white;
+}
+
+#layout-2 {
+    width: 722px;
+    height: 1156px;
+}
+
+#uphead {
+    color: #000000;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#layout-text {
+    text-align: center;
+    color: #414651;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#text-green {
+    text-align: center;
+    color: #00C76E;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#text-pink {
+    color: #FF5DA3;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+#secend-title {
+    color: #414651;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#list {
+    border: 6px solid #C11574;
+    background-color: #FFDEF0;
+    padding: 16px;
+}
+
+#li {
+    color: #C27512;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#link {
+    color: #00D4BC;
+    text-align: right;
+    text-decoration: underline;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
