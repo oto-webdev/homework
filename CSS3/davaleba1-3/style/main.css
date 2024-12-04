@@ -1,0 +1,119 @@
+#heading {
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86.4px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#head-text {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FF8000;
+    text-align: center;
+    width: 1220px;
+    margin: 0 auto;
+}
+
+#big-bang {
+    width: 696px;
+    height: 662px;
+}
+
+#bang {
+    color: #D9AE00;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+#bang-text {
+    color: #6D81B4;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+#black-hole {
+    color: #F44E50;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#black-hole-text { 
+    color: #8B2B2C;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#black {
+    width: 1007px;
+    height: 717px;
+    border: 2px solid #8B2B2C;
+    text-align: center;
+    background-color: #FFCEBE;
+}
+
+#black-img {
+    text-align: center;
+}
+
+#main-layout {
+    width: 696px;
+    height: 1041px;
+}
+
+#main-layout-heading {
+    color: #4716E4;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#main-layout-text {
+    border: 3px solid #FF5DA3;
+    background-color: #FFC1E3;
+    text-align: right;
+    padding: 24px;
+    gap: 10px;
+}
+
+#main-layout-text p {
+    color: #616161;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+#last-heading {
+    color: #414651;
+    font-family: 'Lato';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+#text {
+    color: #C27512;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
