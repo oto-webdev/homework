@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    width: 1140px;
+    height: 72px;
+}
+
+#nav {
+    width: 980px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    left: 80px;
+    padding: 12px 80px 12px 80px;
+}
+
+#nav div a {
+    padding: 10px;
+    text-decoration: none;
+    color: #323232;
+    font-family: 'Inner';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+}
+
+#btn {
+    border: 1px solid #AC00FF;
+    background-color: #E9D7FE;
+    color: #AC00FF;
+    border-radius: 8px;
+    width: 105px;
+    height: 33px;
+    cursor: pointer;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#layout {
+    width: 841px;
+    height: 314px;
+    margin: 0 0 0 214px;
+}
+
+#main-title {
+    font-family: 'Impact';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+#main-text {
+    font-family: 'Inria', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #323232;
+}
+
+#main-flex {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+#main-btn {
+    color: white;
+    background-color: #5C3BAE;
+    border-radius: 8px;
+    width: 204px;
+    height: 54px;
+    cursor: pointer;
+}
+
+#center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#cards {
+    text-align: right;
+}
