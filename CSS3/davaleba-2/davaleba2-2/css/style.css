@@ -1,0 +1,135 @@
+/* base || reset css */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+
+header {
+    text-align: center;
+    margin: 0 390px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 5px;
+    color: #323232;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.78px;
+    text-decoration: none;
+}
+
+#active {
+    color: #FF5DA3;
+    font-weight: 600;
+}
+
+#btn {
+    background-color: #00AC25;
+    color: white;
+    width: 105px;
+    height: 33px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.94px;
+    cursor: pointer;
+}
+
+/* main content */
+
+main {
+    margin: 293px 302px 0;
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87.14px;
+}
+
+main h1 span {
+    color: #FF5DA3;
+}
+
+#text {
+    font-family: 'IBM Plex Sans KR';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+main h2 {
+    font-family: 'Instrument Sans';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58.56px;
+}
+
+#main-text {
+    color: #6941C6;
+    font-family: 'Hind Vadodara';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#btn2 {
+    background-color: #00AC25;
+    color: white;
+    width: 233px;
+    height: 54px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    list-style: 21.78px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    margin-top: 878px;
+    background-color: #53389E;
+    text-align: center;
+    color: white;
+    padding: 32px;
+}
+
+#layout {
+    width: 1216px;
+    margin: 0 auto;
+}
+
+footer #footer-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer div div a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+footer p {
+    color: #D6BBFB;
+    font-weight: 400;
+}
