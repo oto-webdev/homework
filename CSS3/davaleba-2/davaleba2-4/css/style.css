@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#layout {
+    text-align: center;
+    margin-top: 156px;
+}
+
+#layout2 {
+    margin-top: 115px;
+    margin: 0 auto;
+    text-align: center;
+    width: 1137px;
+    height: 350px;
+    background-color: #EBF8FE;
+}
+
+#layout2 h1 {
+    color: #181D27;
+    font-family: 'Inria Sans';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 60px;
+}
+
+#layout2 #text {
+    color: #535862;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: justify;
+}
+
+#layout2 div input {
+    border: 1px solid #D5D7DA;
+    background-color: #FFFFFF;
+    width: 345px;
+    height: 48px;
+    border-radius: 8px;
+    color: #717680;
+    font-weight: 400;
+    font-size: medium;
+}
+
+#layout2 div button {
+    border: 2px solid #FFFFFF;
+    background-color: #007CB8;
+    width: 119px;
+    height: 48px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#text2 {
+    color: #535862;
+    font-weight: 400;
+}
+
+#text2 span {
+    text-decoration: underline;
+}
+
+form {
+    margin: 50px auto;
+    width: 546px;
+    height: 738px;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #EBF8FE;
+}
+
+form h2 {
+    color: #181D27;
+    font-family: 'Inria Sans';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+form #input {
+    border: 1px solid #380054;
+    border-radius: 8px;
+    width: 482px;
+    height: 48px;
+    color: #6D5F8B;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 16px;
+}
+
+#radio {
+    display: flex;
+}
