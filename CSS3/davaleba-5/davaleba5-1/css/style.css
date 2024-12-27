@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #261C51;
+    border: 1px solid #3e3179;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 200px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar ul li a {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar .active {
+    color: #B968DE;
+}
+
+main {
+    background-color: #261C51;
+}
+
+.main-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-1 {
+    padding: 152px 420px;
+    width: 600px;
+    height: 240px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.layout-1 h1 {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.layout-1 p {
+    color: #C0C0C0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn {
+    width: 186px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #9100D3;
+    border: 1px solid #9100D3;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.layout-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0px 300px;
+}
+
+.layout-3 {
+    padding: 160px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.card {
+    width: 304px;
+    height: 204px;
+    border-radius: 8px;
+    border: 1px solid #3e3179;
+    padding: 16px 24px;
+    background-color: #261C51;
+}
+
+.card h2 {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.card p {
+    color: #C0C0C0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer {
+    background-color: #261C51;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #3e3179;
+}
+
+.footer p {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.icon a {
+    margin-right: 20px;
+}

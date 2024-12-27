@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #261C51;
+    border-bottom: 1px solid #33276b;
+    padding: 0 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    margin-top: 34px;
+    gap: 16px;
+}
+
+.navbar svg {
+    margin-top: 28px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar .active {
+    color: #8CE900;
+}
+
+.layout img {
+    width: 314px;
+    height: 320px;
+}
+
+main {
+    background-color: #261C51;
+    padding: 0 200px;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 128px 0;
+}
+
+.layout h1 {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.project {
+    background-color: #242642;
+}
+
+.project-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project h2 {
+    color: #8CE900;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.project p {
+    color: #C0C0C0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer {
+    background-color: #261C51;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 184px;
+    padding: 170px 200px;
+}
+
+.footer p {
+    color: #C0C0C0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-card {
+    width: 264px;
+    height: 100px;
+}
+
+.footer ul li a {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer .active {
+    color: #8CE900;
+}
+
+.footer ul li {
+    margin-top: 16px;
+}
