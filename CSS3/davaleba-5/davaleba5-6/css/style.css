@@ -1,0 +1,503 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    padding: 22px 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo p {
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.navbar div {
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar ul a {
+    color: #535862;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btns {
+    gap: 8px;
+}
+
+.btn1 {
+    border: 1px solid #D5D7DA;
+    width: 73px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #414651;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 83px;
+    height: 40px;
+    background-color: #7F56D9;
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home {
+    padding: 96px 208px 0 208px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature {
+    display: flex;
+    border: 1px solid #D5D7DA;
+    border-radius: 10px;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 12px 8px 8px;
+}
+
+.new-feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #D5D7DA;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.new-feature {
+    color: #414651;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dashboard {
+    color: #414651;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.heading {
+    color: #181D27;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.home-text {
+    color: #535862;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn3 {
+    width: 131px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #D5D7DA;
+    background-color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color: #414651;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.btn4 {
+    width: 114px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #7F56D9;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.banner {
+    padding: 96px 208px 0 208px;
+    text-align: center;
+}
+
+.feature-text {
+    color: #6941C6;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.analytic-heading {
+    color: #181D27;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.analytic-text {
+    color: #535862;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cards {
+    padding: 20px 208px 0 208px;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+}
+
+.card h2 {
+    color: #181D27;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card p {
+    color: #535862;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.stick {
+    border: 2px solid #535862;
+    height: 114px;
+}
+
+.upgrade {
+    padding: 40px 208px 0 208px;
+}
+
+.upgrade-text {
+    color: #7F56D9;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.upgrade h2 {
+    text-align: center;
+    color: #181D27;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.upgrade-plan {
+    color: #535862;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.plan {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan p, .subhead {
+    text-align: center;
+}
+
+.basic {
+    background-color: #F4EBFF;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.offer {
+    padding: 32px 208px 0 208px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.offer-card {
+    border: 1px solid #E9EAEB;
+    border-radius: 16px;
+    padding: 32px 32px 32px 24px;
+    width: 50%;
+}
+
+.energy {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #F4EBFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.offer-plan {
+    color: #6941C6;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-heading {
+    text-align: center;
+    color: #181D27;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+} 
+
+.offer-text {
+    color: #535862;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.check {
+    margin-top: 32px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mark {
+    width: 24px;
+    height: 24px;
+    background-color: #F9F5FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex p {
+    color: #535862;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn {
+    background-color: #E9EAEB;
+    border: 1px solid #E9EAEB;
+    padding: 32px;
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: #7F56D9;
+    border-radius: 8px;
+    border: none;
+    width: 432px;
+    height: 48px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.review {
+    margin: 91px 208px 0px 208px;
+}
+
+.layout {
+    display: flex;
+    background-color: #53389E;
+}
+
+.layout, img {
+    border-radius: 24px;
+}
+
+.review-img {
+    width: 480px;
+    height: 566px;
+    min-height: 448px;
+}
+
+.between {
+    padding: 64px;
+}
+
+.stars {
+    display: flex;
+    gap: 10px;
+}
+
+.between h2 {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.weels {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.designer {
+    color: #E9D7FE;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #9E77ED;
+}
+
+.dot1 {
+    background-color: #FFFFFF;
+}
+
+.footer-text {
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.copy p {
+    color: #717680;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer div {
+    padding: 24px 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul {
+    display: flex;
+    gap: 32px;
+}
