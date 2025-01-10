@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <svg width="48" height="26" viewBox="0 0 48 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1746 18.4933L20.7434 23.0621C23.5238 25.8425 28.0316 25.8425 30.812 23.0621C31.7289 22.1452 32.3435 21.0403 32.6556 19.8715L35.8462 23.0621C38.6266 25.8425 43.1344 25.8425 45.9147 23.0621C48.6951 20.2818 48.6951 15.774 45.9147 12.9936L35.8462 2.9251C33.0659 0.144757 28.558 0.144758 25.7777 2.9251C24.8607 3.84206 24.2462 4.94691 23.9341 6.11573L20.7434 2.9251C17.9631 0.144759 13.4553 0.144759 10.6749 2.92511L2.38936 11.2107C-0.796453 14.3965 -0.796453 19.5617 2.38936 22.7475C5.57517 25.9333 10.7404 25.9333 13.9262 22.7475C15.1322 21.5415 15.8817 20.0519 16.1746 18.4933ZM18.2263 5.44223C16.8361 4.05206 14.5822 4.05206 13.192 5.44224C11.8025 6.83181 11.8019 9.0844 13.1903 10.4747L23.2606 20.545C24.6507 21.9352 26.9047 21.9352 28.2948 20.545C29.6843 19.1556 29.685 16.9033 28.297 15.513L18.2263 5.44223ZM11.4091 13.7278L8.15778 10.4765L4.90649 13.7278C3.11085 15.5234 3.11085 18.4347 4.90649 20.2304C6.70213 22.026 9.61344 22.026 11.4091 20.2304C13.2047 18.4347 13.2047 15.5234 11.4091 13.7278ZM28.2919 10.4735C26.9047 9.08313 26.9056 6.83142 28.2948 5.44223C29.685 4.05206 31.9389 4.05206 33.3291 5.44223L43.3976 15.5108C44.7878 16.9009 44.7878 19.1548 43.3976 20.545C42.0074 21.9352 39.7535 21.9352 38.3634 20.545L28.2919 10.4735Z" fill="#DD2590"/>
+            </svg>
+        </div>            
+
+        <ul>
+            <li>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 20.5V16C9.5 14.619 10.619 13.5 12 13.5V13.5C13.381 13.5 14.5 14.619 14.5 16V20.5H20V11.914C20 11.384 19.789 10.875 19.414 10.5L12.707 3.793C12.316 3.402 11.683 3.402 11.293 3.793L4.586 10.5C4.211 10.875 4 11.384 4 11.914V20.5H9.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.7925 9.52352C21.5825 10.3136 21.5825 11.5944 20.7925 12.3845C20.0025 13.1745 18.7216 13.1745 17.9315 12.3845C17.1415 11.5944 17.1415 10.3135 17.9315 9.52352C18.7216 8.73349 20.0025 8.73349 20.7925 9.52352" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.2026 5.91236C15.4191 7.12884 15.4191 9.10115 14.2026 10.3176C12.9861 11.5341 11.0138 11.5341 9.79732 10.3176C8.58084 9.10116 8.58084 7.12885 9.79732 5.91236C11.0138 4.69588 12.9861 4.69588 14.2026 5.91236" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.06848 9.52352C6.85851 10.3136 6.85851 11.5944 6.06848 12.3845C5.27845 13.1745 3.99756 13.1745 3.20753 12.3845C2.4175 11.5944 2.4175 10.3135 3.20753 9.52352C3.99756 8.73349 5.27845 8.73349 6.06848 9.52352" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M23 19V17.904C23 16.523 21.881 15.404 20.5 15.404H19.699" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M1 19V17.904C1 16.523 2.119 15.404 3.5 15.404H4.301" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.339 19V17.399C17.339 15.466 15.772 13.899 13.839 13.899H10.16C8.227 13.899 6.66 15.466 6.66 17.399V19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.414 6.414L15.586 3.586C15.211 3.211 14.702 3 14.172 3H7C5.895 3 5 3.895 5 5V19C5 20.105 5.895 21 7 21H17C18.105 21 19 20.105 19 19V7.828C19 7.298 18.789 6.789 18.414 6.414V6.414Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 8H15C14.448 8 14 7.552 14 7V3" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                               
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.383 8H19.444C20.304 8 21 8.696 21 9.556V19.445C21 20.304 20.304 21 19.444 21H8.556C7.696 21 7 20.304 7 19.444V18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.001 18H15.313C15.982 18 16.606 17.666 16.977 17.109L17.711 16.007C18.149 15.35 18.383 14.578 18.383 13.788V6C18.383 4.895 17.488 4 16.383 4H6.383C5.278 4 4.383 4.895 4.383 6V13.056C4.383 13.677 4.238 14.289 3.961 14.845L3.107 16.553C2.774 17.218 3.258 18 4.001 18Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.38 3V5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.38 3V5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.19 9H14.19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.19 13H14.19" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <nav class="navbar">
+            <div class="searchBar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.0586" cy="11.0586" r="7.06194" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.0033 20.0033L16.0517 16.0517" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>  
+                <p>Search in homes, Apartments, Villas,...</p>                  
+            </div>
+
+            <div class="profile">
+                <p>Brooklyn Simmons</p>
+                <img class="profileImg" src="https://s3-alpha-sig.figma.com/img/b249/fd4c/28ccceb683ea146e0d249cbbc479ee9b?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MoHU4fIGy050kADa8ynuGOUmY~Zz21eeAU0UNJ-JpiO6XUoKEZwQQlBvZ~q-OEhgeXExtPtF4fMUMbjg1dmjxKKDPw7FWreOfRu92feREnQw~uquUbrwo5~mdcxHiJqc7fgTov33XhqJtg18U3v4dA5rZ0J0ashKZAipb9seoatncUniRocYukd~MgOut90-Apuo6HBcdqtnbgBlhJVl4aTgOLIOpMa9dnSOjFEiGYsyhMo1cqHDxCeli8qqHLEQ75ypNAFWk18c6Zi7mmL5HguVJl59cAbHyS5ay4bi~6EZb1z1M-kcOhtpWHLvSr~lSwLKDuOQuymQxwkBfaEj1w__" alt="profileImg">
+            </div>
+        </nav>
+
+        <div class="menu">
+            <div class="country">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.99747 13.1535C4.1597 13.9778 2.99622 15.1703 2.99622 16.5019C2.99622 18.9879 7.02689 21.0038 12 21.0038C16.973 21.0038 21.0037 18.9879 21.0037 16.5019C21.0037 15.1703 19.8402 13.9778 18.0025 13.1535" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.6535 17.0021C14.5694 17.7075 13.2923 18.0572 12 18.0025C10.7078 18.0572 9.43061 17.7075 8.3465 17.0021" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.2009 3.90963C15.0928 4.80145 15.3596 6.14269 14.877 7.30794C14.3943 8.47319 13.2573 9.23295 11.996 9.23295C10.7348 9.23295 9.59771 8.47319 9.11507 7.30794C8.63242 6.14269 8.89924 4.80145 9.7911 3.90963C10.3758 3.32462 11.1689 2.99594 11.996 2.99594C12.8231 2.99594 13.6163 3.32462 14.2009 3.90963" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 9.23085V15.0012" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>Spain, Madrid</p>                    
+            </div>
+            <div class="month">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.383 8H19.444C20.304 8 21 8.696 21 9.556V19.445C21 20.304 20.304 21 19.444 21H8.556C7.696 21 7 20.304 7 19.444V18" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00097 18H15.313C15.982 18 16.606 17.666 16.977 17.109L17.711 16.007C18.149 15.35 18.383 14.578 18.383 13.788V6C18.383 4.895 17.488 4 16.383 4H6.38297C5.27797 4 4.38297 4.895 4.38297 6V13.056C4.38297 13.677 4.23797 14.289 3.96097 14.845L3.10697 16.553C2.77397 17.218 3.25797 18 4.00097 18Z" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.38 3V5" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.38 3V5" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.19 9H14.19" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.19 13H14.19" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>24- 28 july</p>                    
+            </div>
+            <div class="guest">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7925 9.52352C21.5826 10.3136 21.5826 11.5944 20.7925 12.3845C20.0025 13.1745 18.7216 13.1745 17.9316 12.3845C17.1415 11.5944 17.1415 10.3136 17.9316 9.52352C18.7216 8.73349 20.0025 8.73349 20.7925 9.52352" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.2026 5.91236C15.4191 7.12884 15.4191 9.10115 14.2026 10.3176C12.9861 11.5341 11.0138 11.5341 9.79731 10.3176C8.58083 9.10116 8.58083 7.12885 9.79731 5.91236C11.0138 4.69588 12.9861 4.69588 14.2026 5.91236" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.06846 9.52352C6.85849 10.3136 6.85849 11.5944 6.06846 12.3845C5.27843 13.1745 3.99754 13.1745 3.20751 12.3845C2.41748 11.5944 2.41748 10.3136 3.20751 9.52352C3.99754 8.73349 5.27843 8.73349 6.06846 9.52352" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23 19V17.904C23 16.523 21.881 15.404 20.5 15.404H19.699" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 19V17.904C1 16.523 2.119 15.404 3.5 15.404H4.301" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.339 19V17.399C17.339 15.466 15.772 13.899 13.839 13.899H10.16C8.22697 13.899 6.65997 15.466 6.65997 17.399V19" stroke="#155EEF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p>2 guest</p>                    
+            </div>        
+        </div>
+
+        <div class="houseBox">
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/c9e0/2db2/1575936bab0a5445270ad0cf536b0ac7?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SoIThUYBVGlISPlFoTMkbZRoPnINNgsP1q4di7mI1smbUJVAUfNgWoI39Ru9p7V3HY6gvlsmMt326DiNJmmoZ1XlxtiBR8KquA1hS0ZP1nHekcrE2WIImKhARfBjJBKv~Q6qtEw5FH3zxIuL8oQxy-PntHaJIyklJg1JJi8rxl~r7TvvKsP2jBDcUlW-kD4DLFlbA4VxdXb1Sn1FezMHFiYJ625ORS43dQQzEZhcp1q2DsuJ5JyXAz6PUwW~JMz68guZH5kzZQVTRLkKauluMQsXj7dHqP1o7oqFKYU7mT8pgQ14hvz6oyV5B3TfhrBQGO-BGZ1zfOJ1KlN5unCvkA__">
+                <div class="boxText">
+                    <h2>Individual Modern House</h2>
+                    <p>1903 St, Lasanta Alley, 21</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/f40e/d03c/1ade41c67316e8b6aabb0e952599a0db?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QzGUHOPzlbWeoz44Y5wXUDNtdjSF8hcvD2LSuqMFweGmh7zEGIPHOPb8rAokvsMPi~nNUt3vtjiFPM4qMZ5cPnMW3afTAHS-aIGNA10hsghn9yWlEubpYPXIjUPeTpEcHqiJXQ7H-R10zrmIB3tIlCcUKntuxYmk~tc1-HUX9Or3KOCmOtMGubPNwHGmr1xyYF85jLy1JyxrE4EMawjdqcVY4mgfxK2oa-fSnlu6Jisuu8N92zkSoFKmHH0xBpxpaZw2--2VV3iXzmHuLo7tiHXZtY1GHmnREvQGZYs8C3l~gKMqC0MY2ELadv8sCx1gEBPNyUUEsjfDiDa5BoKsaQ__">
+                <div class="boxText">
+                    <h2>Glossy Twin Villa</h2>
+                    <p>148 St, Locha Alley, 11028</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/967c/3bfa/99631b1e0713e3461001b411285357fe?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Jo1XzH9m1g-wP3v10~v4E6NtWQR5UYl~kj7gAT1BE-1JugxAqd1CV0Y7g5Zbxn66lEje0-EXzQzABbJ4mb-eYm-T7l4gNDa54lFAvYZVJd~cYrfID6VTSkkZspXEWNC~7uk6-~FXa-gsqIR41f6rDTnxWUsl6K9SXkBKdXt5vE7Qyy5eJ7UCGN2~-XcA6bD4BkcmYp8GQLkW~GL19~JZt8YYTQhCzdmIUw5YhNZ0rj6-u~W6OV-0tehgrp6HxhEtMJc6nxa6a-fATYL4-f-4GAMLuxjRv88TZgjtIZr889ZncEUNLrZXyHNzUlrLk~SdcTdmRgjUjqb5Juh0GaoYDQ__">
+                <div class="boxText">
+                    <h2>Palmasantos Hosting House</h2>
+                    <p>172 St, Palma Alley, 10911</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="houseBox houseBox2">
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/04ff/2599/84430fd2138d2e96b325017c053ebf3d?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PQHuNlcRZuwca4mQBSTy2I5A5fDUXiGUKdG7k4KyHhfp17-oC7TIAIuTRoK6Mkzf0h6K6yIhAD4LzJuQiG5E0YV9AmkDxUDZl9qcvpt~qOT7eSqHceSxUjdiSYVaA55lGukRLgcd5J2WO~3guWfQaZ9ti2YojtYB2j1gyKWBKGqAddPI-szpuFi-slL5ng9zZx-VuYlOdtsbTMpYMMI1YTwmuEKtauNpWjDDx54S3apbTB1FINHlkxkXbr6qItV7LQbmLvBoDJwq81p03WPiJp~RCxsZP2K7niPoTFt9FklveIg81bFBtZbB-5HUAOSVnvy~kaQmUg4RnQrJ9uvYXg__">
+                <div class="boxText">
+                    <h2>Tropic Flat Villa</h2>
+                    <p>1903 St, Lasanta Alley, 21</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/083d/5215/f98054a2a6136739f491267e322fd737?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M5RcM8VGzVhrEdgDu6lpE3L5do43z0LmQWsiG34kSnWhI2aUu8r0IX4iDZgoZEHV4oWdD3fqwtWNQAyUIElR1OYHrj6iTAXfhla51dD-2LMLn5sQqwhsApqg2Yk3DpjgBOG3FUN2KJSWYoKlxvhFy5s6tmhcs8Jheb88gUObjbvnRP6y6Ox2vPxLWRiizaS7lPI0NbloByh4MG51xQcHwyCtgCPjn~Stb5KK34cwXYK8kQlzYhNOIj-tbjnNd6XMwm6itzUimJGs1PApK5Rz4b7lVFba-fQUsOVdXS78dijIj7TndxXlzY70luf7iRCugbQPYxMQQwYCVawdoZo06w__">
+                <div class="boxText">
+                    <h2>Individual Villa</h2>
+                    <p>26 St, Southwood Alley, 11062</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://s3-alpha-sig.figma.com/img/5eae/e53f/fea7553eb8b40ff46da07ef37d8a3580?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j5q15xcqCPnekTbGPLTfLBtMTGc9QswR4LX-eLnKca1SW07w2NuMHJzCy23Y67puVvDRgv1FQ3BLEUkSbKwWR2~X2eHEDVYuD6XTeYmgATwRwuhM27gTaAF5Xw0SReidFGuZiny1WYl3t4VvHufWTja6dwk7THCBHX2kjSKS9fOx4Ttida14F-mBLq26BqxR2uDKO2RiBz29J7yTGeiM1xrr~EaLgOb3loZczWIxNe2xKqeuDuy7J4qBhk2pGRrGHDbkFkvFDjMEKsvwVSJnFOmeLo0Y8Eo5OMIpglz~DzGEcows9DIh7Sod46eaYLro-EY-L53HuFtF7uBc079UsQ__">
+                <div class="boxText">
+                    <h2>Mini Doub House</h2>
+                    <p>1903 St, Lasanta Alley, 21</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
