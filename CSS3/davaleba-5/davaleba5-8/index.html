@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div>
+            <div class="logo">
+                <svg width="192" height="46" viewBox="0 0 192 46" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="192" height="46" fill="url(#pattern0_0_43)"/>
+                    <defs>
+                    <pattern id="pattern0_0_43" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_43" transform="matrix(0.00242131 0 0 0.0101063 0 -0.000263186)"/>
+                    </pattern>
+                    <image id="image0_0_43" width="413" height="99" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="company">
+                <p class="companyHeading">
+                    Company
+                </p>
+
+                <ul>
+                    <li class="active">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 20.5V16C9.5 14.619 10.619 13.5 12 13.5V13.5C13.381 13.5 14.5 14.619 14.5 16V20.5H20V11.914C20 11.384 19.789 10.875 19.414 10.5L12.707 3.79301C12.316 3.40201 11.683 3.40201 11.293 3.79301L4.586 10.5C4.211 10.875 4 11.384 4 11.914V20.5H9.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+
+                        <a href="#">
+                            General
+                        </a>
+                    </li>
+
+                    <li class="companyLi">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20C5 17.5 7 15.6 9.4 15.6H14.5C17 15.6 18.9 17.6 18.9 20" stroke="white" stroke-width="1.4824" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 9.00001 11.2C7.40001 9.5 7.30001 6.8 9.00001 5.2C10.7 3.6 13.3 3.6 15 5.2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                               
+
+                        <a href="#">
+                            Members
+                        </a>
+                    </li>
+
+                    <li class="companyLi">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7925 9.52352C21.5825 10.3136 21.5825 11.5944 20.7925 12.3845C20.0025 13.1745 18.7216 13.1745 17.9315 12.3845C17.1415 11.5944 17.1415 10.3136 17.9315 9.52352C18.7216 8.73349 20.0025 8.73349 20.7925 9.52352" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.2026 5.91236C15.4191 7.12884 15.4191 9.10115 14.2026 10.3176C12.9861 11.5341 11.0138 11.5341 9.79732 10.3176C8.58084 9.10116 8.58084 7.12885 9.79732 5.91236C11.0138 4.69588 12.9861 4.69588 14.2026 5.91236" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.06848 9.52352C6.85851 10.3136 6.85851 11.5944 6.06848 12.3845C5.27845 13.1745 3.99756 13.1745 3.20753 12.3845C2.4175 11.5944 2.4175 10.3136 3.20753 9.52352C3.99756 8.73349 5.27845 8.73349 6.06848 9.52352" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 19V17.904C23 16.523 21.881 15.404 20.5 15.404H19.699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 19V17.904C1 16.523 2.119 15.404 3.5 15.404H4.301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.339 19V17.399C17.339 15.466 15.772 13.899 13.839 13.899H10.16C8.227 13.899 6.66 15.466 6.66 17.399V19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                              
+
+                        <a href="#">
+                            Teams
+                        </a>
+                    </li>
+
+                    <li class="companyLi">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 21H5C3.895 21 3 20.105 3 19V5C3 3.895 3.895 3 5 3H19C20.105 3 21 3.895 21 5V19C21 20.105 20.105 21 19 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 15H7.382C7.761 15 8.107 15.214 8.276 15.553L8.723 16.447C8.893 16.786 9.239 17 9.618 17H14.382C14.761 17 15.107 16.786 15.276 16.447L15.723 15.553C15.893 15.214 16.239 15 16.618 15H21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                                                   
+                        <a href="#">
+                            Custom fields
+                        </a>
+                    </li>
+                    <div class="stick"></div>
+                </ul>
+            </div>
+
+            <div class="accaunt">
+                <p class="companyHeading">
+                    Accaunt
+                </p>
+
+                <ul class="accauntUl">
+                    <li class="companyLi">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20C5 17.5 7 15.6 9.4 15.6H14.5C17 15.6 18.9 17.6 18.9 20" stroke="white" stroke-width="1.4824" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 9.00001 11.2C7.40001 9.5 7.30001 6.8 9.00001 5.2C10.7 3.6 13.3 3.6 15 5.2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                          
+
+                        <a href="#">
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="companyLi">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7925 9.52352C21.5825 10.3136 21.5825 11.5944 20.7925 12.3845C20.0025 13.1745 18.7216 13.1745 17.9315 12.3845C17.1415 11.5944 17.1415 10.3136 17.9315 9.52352C18.7216 8.73349 20.0025 8.73349 20.7925 9.52352" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.2026 5.91236C15.4191 7.12884 15.4191 9.10115 14.2026 10.3176C12.9861 11.5341 11.0138 11.5341 9.79732 10.3176C8.58084 9.10116 8.58084 7.12885 9.79732 5.91236C11.0138 4.69588 12.9861 4.69588 14.2026 5.91236" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.06848 9.52352C6.85851 10.3136 6.85851 11.5944 6.06848 12.3845C5.27845 13.1745 3.99756 13.1745 3.20753 12.3845C2.4175 11.5944 2.4175 10.3136 3.20753 9.52352C3.99756 8.73349 5.27845 8.73349 6.06848 9.52352" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 19V17.904C23 16.523 21.881 15.404 20.5 15.404H19.699" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 19V17.904C1 16.523 2.119 15.404 3.5 15.404H4.301" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.339 19V17.399C17.339 15.466 15.772 13.899 13.839 13.899H10.16C8.227 13.899 6.66 15.466 6.66 17.399V19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                       
+                                                   
+                        <a href="#">
+                            My works
+                        </a>
+                    </li>
+                    <div class="stick"></div>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="navbar">
+            <div class="searchBar">
+                <input type="search" placeholder="search">
+                <div class="searchIcon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.0586" cy="11.0586" r="7.06194" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.0033 20.0033L16.0517 16.0517" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+            </div>
+            
+            <div class="profile">
+                <div>
+                    <p>Devon Lane</p>
+                </div>
+
+                <div>
+                    <img src="https://s3-alpha-sig.figma.com/img/22c5/5c29/062f8b038339bea4a15b45b65c2e5357?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BOqQTR6tnEVihJnfe3olJPcYayr7WuriW6mUEmJID51H6FPlkk3uWK76JpWIwTJFxPCm39bnNQr7j3Q3Jdvy20qmttZwxAXbQWoV7ohbwzlP9wYpUEnpi8RUejbaSSVJrnR2PBgLQuj6UUCxmrNOMH0c5ZEKiaRC3K~UZup0Wx1EqJAMIHTHXlgN4OrLrNW0Y2S~338qc-DRaAXuePjBpXRcoYhwus~D-k-xcZnEgQeaAqxzClkkUlk-LuogYJO65-2tK7B5EiMSZ739sfCAdNfkSOwk4bgOo0LB9394bfPILPZhFmYv-NMMW1dNa9uxmbKMTNg4HJMC5nm6kRa40A__" alt="img">
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="heroText">
+                <h1>GIFTING DAYS</h1>
+                <h2>Buy one and get one free</h2>
+                <p>
+                    Pellentesque vehicula eros neque, maximus mattis est sagittis facilisi.”<span>In sed pretium metus</span>”.
+                </p>
+            </div>
+
+            <div class="heroImg">
+                <img src="https://s3-alpha-sig.figma.com/img/0e01/ed09/610330170250650ec0bd9daa88f01150?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NmiDIr2nXzUbHza1KGUw0HbzHS05cFlrdR0YpP-L-F9ECA2sgSXg6e8cggZYUs9YIq9TMVaRsvFk635jYmMzSDghOgCPXJBov-283SJ-HYbT6mJCoG4lroeo5Sx8oDfnnx5OEwIqMzyCmzH1-w3ACRW6cK1zxgwpd1u91iL-JmO-cBbObHoQngVfqaM6aCdKjFiu7rH99kzciGQtifB4IRJqZqTaS3-5YAEnc-hKEc9LSizL0hqtM~OGRZgcY~AX3BJBNbtpbWmk3ocatOruH7vo8sWBaDQSYGoVTA2~hRygZEWn14MQlPRo1MWNiYeujSaE5T1GIjHoubxtHNnIvw__" alt="img">
+            </div>
+        </section>
+
+        <section class="list">
+            <ul>
+                <li class="listActive">
+                    <div class="">
+                        <img src="https://s3-alpha-sig.figma.com/img/0e01/ed09/610330170250650ec0bd9daa88f01150?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NmiDIr2nXzUbHza1KGUw0HbzHS05cFlrdR0YpP-L-F9ECA2sgSXg6e8cggZYUs9YIq9TMVaRsvFk635jYmMzSDghOgCPXJBov-283SJ-HYbT6mJCoG4lroeo5Sx8oDfnnx5OEwIqMzyCmzH1-w3ACRW6cK1zxgwpd1u91iL-JmO-cBbObHoQngVfqaM6aCdKjFiu7rH99kzciGQtifB4IRJqZqTaS3-5YAEnc-hKEc9LSizL0hqtM~OGRZgcY~AX3BJBNbtpbWmk3ocatOruH7vo8sWBaDQSYGoVTA2~hRygZEWn14MQlPRo1MWNiYeujSaE5T1GIjHoubxtHNnIvw__" alt="img">
+                    </div>
+
+                    <div class=""> 
+                        <p>All</p>
+                    </div>
+                </li>
+
+                <li class="grinch">
+                    <div class="">
+                        <img src="https://s3-alpha-sig.figma.com/img/0e01/ed09/610330170250650ec0bd9daa88f01150?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NmiDIr2nXzUbHza1KGUw0HbzHS05cFlrdR0YpP-L-F9ECA2sgSXg6e8cggZYUs9YIq9TMVaRsvFk635jYmMzSDghOgCPXJBov-283SJ-HYbT6mJCoG4lroeo5Sx8oDfnnx5OEwIqMzyCmzH1-w3ACRW6cK1zxgwpd1u91iL-JmO-cBbObHoQngVfqaM6aCdKjFiu7rH99kzciGQtifB4IRJqZqTaS3-5YAEnc-hKEc9LSizL0hqtM~OGRZgcY~AX3BJBNbtpbWmk3ocatOruH7vo8sWBaDQSYGoVTA2~hRygZEWn14MQlPRo1MWNiYeujSaE5T1GIjHoubxtHNnIvw__" alt="img">
+                    </div>
+
+                    <div class=""> 
+                        <p>Grinch</p>
+                    </div>
+                </li>
+
+                <li class="harry">
+                    <div class="">
+                        <img src="https://s3-alpha-sig.figma.com/img/9e1f/d8f9/55abf4676fb1152aae8c58bc5d858522?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nndNjh2LAf4IczXFhW8MLT-KkFArhjffnE4Pk6UNbYeQBd6140tc8Hw9UMuMC3G1r4vrKuYkPUtctSrtQE22DvFT67mabBFI7VEllKRgqmJotTD8riPM11tTbOeaOCzDoRQGHnEf6KxY~NShtBYyaZBPyGzW6AXdPS5w7AUc3MpdQ7P5kJWZ081wy~YyhCd5ckvOfMnoWZodfe9Hn50JHNL8ok0UeL4iZ03W4eawkxuyNAiGxMd~JCoVlh~umFdzz3~WpZcIqxFjtPWGJIFsEeIow9L-Ev2uvU7c8~kyukuZ7A4d~iV0LySCkwXK1drazCfuMyawYSMFvvYhfCAqvQ__" alt="img">
+                    </div>
+
+                    <div class=""> 
+                        <p>Harry Potter</p>
+                    </div>
+                </li>
+
+                <li class="harry">
+                    <div class="">
+                        <img src="https://s3-alpha-sig.figma.com/img/9e1f/d8f9/55abf4676fb1152aae8c58bc5d858522?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nndNjh2LAf4IczXFhW8MLT-KkFArhjffnE4Pk6UNbYeQBd6140tc8Hw9UMuMC3G1r4vrKuYkPUtctSrtQE22DvFT67mabBFI7VEllKRgqmJotTD8riPM11tTbOeaOCzDoRQGHnEf6KxY~NShtBYyaZBPyGzW6AXdPS5w7AUc3MpdQ7P5kJWZ081wy~YyhCd5ckvOfMnoWZodfe9Hn50JHNL8ok0UeL4iZ03W4eawkxuyNAiGxMd~JCoVlh~umFdzz3~WpZcIqxFjtPWGJIFsEeIow9L-Ev2uvU7c8~kyukuZ7A4d~iV0LySCkwXK1drazCfuMyawYSMFvvYhfCAqvQ__" alt="img">
+                    </div>
+
+                    <div class=""> 
+                        <p>Harry Potter</p>
+                    </div>
+                </li>
+
+                <li class="sponge">
+                    <div class="">
+                        <img src="https://s3-alpha-sig.figma.com/img/7113/3efe/d67260a4e99cfc11a628fb690f164cb6?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qf0ivfnkV0LR5EGRdXrY~WCN3UmkZJvDSAg5qrZAFlN-PcEVUx6P2aiXlfdihH0RGXpeqg78qYBuk1sOVfAri0LPN0m2OviePKnead4h~3eegRbbh4uU1cW2QK5siArjFL~f6Mlo0rb7YCgMkZ5vvSmUE8NYQzgJd77jLxm1LSyd9PMYraTHZtKmLsB3RHie6e8O44HwquEn7A47pJtICeT6Jf7iBe5nuUgN5CL7LWYi7K9fB8l1lSTwXtV36dLBKwII-PqKnWzn2HZ2RjEQ2mozKBtuy5ZWOVHEX1qszjsxQVtmwrLHHHNvU4IIVKU8JlaWkIjN3DluOTwSDPiFMA__" alt="img">
+                    </div>
+
+                    <div class=""> 
+                        <p>SpongeBob</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sale">
+            <h2>Flash Sale</h2>
+
+            <div class="endingSale">
+                <p>On sale Now</p>
+
+                <div class="timer">
+                    <p>Ending in</p>
+                    
+                    <img src="./images/Frame 169.png" alt="frame">                    
+                </div>
+            </div>
+
+            <div class="sale-container">
+                <div class="sales">
+                    <div class="saleImg">
+                        <img src="https://s3-alpha-sig.figma.com/img/57a9/3f67/9ec2a257fd63e6f1d03ad172a660b4fc?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jeErVRzL60IZwp3woC6EwMydvjlVE2U29zXQcWpGHWt-ovdbVACNomrOUFKNtF3Y1cNOJzdmtdx8BPejL0LKE~ycv~jZco8vpCDK5LoPAtEPOxhBdcsBsmJXiu1yGgGsuShWZHxX~8uzNEnaClUKvctfFejUt7sU70uqHIbGb1hSTNVIiZdREgXo10Du692u4AVFEIz19d~ePQULTHjj9NtxVFgJyCGQxtpMTnnA3NGmfA1YcIiA81vj1HAtTuFGCvPtUF~c88kND63awFInCTqj8WiE9UpLji~Gu8i8ZWeJGmW6xLEiTQ93Pc6ak18sEO3A3b06p7NI2qpNMLsWiQ__" alt="img">
+                    </div>
+
+                    <div>
+                        <div class="stars">
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+
+                        <h2>How i stole Christmas</h2>
+                        <p class="saleText">
+                            Grinch got caught stealing Christmas spirit.
+                        </p>
+
+                        <div class="prices">
+                            <div class="salePrice">
+                                <p>$10.99</p>
+                            </div>
+                            <div class="price">
+                                <p>$16.99</p>
+                            </div>
+                        </div>
+                        
+                        <button class="btn">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="saleImg">
+                        <img src="https://s3-alpha-sig.figma.com/img/57a9/3f67/9ec2a257fd63e6f1d03ad172a660b4fc?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jeErVRzL60IZwp3woC6EwMydvjlVE2U29zXQcWpGHWt-ovdbVACNomrOUFKNtF3Y1cNOJzdmtdx8BPejL0LKE~ycv~jZco8vpCDK5LoPAtEPOxhBdcsBsmJXiu1yGgGsuShWZHxX~8uzNEnaClUKvctfFejUt7sU70uqHIbGb1hSTNVIiZdREgXo10Du692u4AVFEIz19d~ePQULTHjj9NtxVFgJyCGQxtpMTnnA3NGmfA1YcIiA81vj1HAtTuFGCvPtUF~c88kND63awFInCTqj8WiE9UpLji~Gu8i8ZWeJGmW6xLEiTQ93Pc6ak18sEO3A3b06p7NI2qpNMLsWiQ__" alt="img">
+                    </div>
+
+                    <div>
+                        <div class="stars">
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+
+                        <h2>How i stole Christmas</h2>
+                        <p class="saleText">
+                            Grinch got caught stealing Christmas spirit.
+                        </p>
+
+                        <div class="prices">
+                            <div class="salePrice">
+                                <p>$10.99</p>
+                            </div>
+                            <div class="price">
+                                <p>$16.99</p>
+                            </div>
+                        </div>
+
+                        <button class="btn">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="saleImg">
+                        <img src="https://s3-alpha-sig.figma.com/img/57a9/3f67/9ec2a257fd63e6f1d03ad172a660b4fc?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jeErVRzL60IZwp3woC6EwMydvjlVE2U29zXQcWpGHWt-ovdbVACNomrOUFKNtF3Y1cNOJzdmtdx8BPejL0LKE~ycv~jZco8vpCDK5LoPAtEPOxhBdcsBsmJXiu1yGgGsuShWZHxX~8uzNEnaClUKvctfFejUt7sU70uqHIbGb1hSTNVIiZdREgXo10Du692u4AVFEIz19d~ePQULTHjj9NtxVFgJyCGQxtpMTnnA3NGmfA1YcIiA81vj1HAtTuFGCvPtUF~c88kND63awFInCTqj8WiE9UpLji~Gu8i8ZWeJGmW6xLEiTQ93Pc6ak18sEO3A3b06p7NI2qpNMLsWiQ__" alt="img">
+                    </div>
+
+                    <div>
+                        <div class="stars">
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+
+                            <div class="star">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.44269 17.3606C6.02013 17.5811 5.50893 17.5423 5.12454 17.2604C4.74015 16.9785 4.54943 16.5027 4.63277 16.0333L5.30722 12.1676L2.4677 9.44643C2.12062 9.11544 1.99342 8.6151 2.14028 8.15853C2.28714 7.70196 2.68219 7.36961 3.15715 7.30304L7.09963 6.73947L8.87954 3.18883C9.09057 2.763 9.52475 2.49361 10 2.49361C10.4753 2.49361 10.9094 2.763 11.1205 3.18883L12.9004 6.73947L16.8429 7.30304C17.3178 7.36961 17.7129 7.70196 17.8597 8.15853C18.0066 8.6151 17.8794 9.11544 17.5323 9.44643L14.6928 12.1676L15.3672 16.0342C15.4506 16.5035 15.2599 16.9794 14.8755 17.2613C14.4911 17.5431 13.9799 17.582 13.5573 17.3614L10 15.5231L6.44269 17.3606Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+
+                        <h2>How i stole Christmas</h2>
+                        <p class="saleText">
+                            Grinch got caught stealing Christmas spirit.
+                        </p>
+
+                        <div class="prices">
+                            <div class="salePrice">
+                                <p>$10.99</p>
+                            </div>
+                            <div class="price">
+                                <p>$16.99</p>
+                            </div>
+                        </div>
+
+                        <button class="btn">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="theme">
+            <div>
+                <h2>All Themes</h2>
+            </div>
+
+            <div class="themeContainer">
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/57a9/3f67/9ec2a257fd63e6f1d03ad172a660b4fc?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jeErVRzL60IZwp3woC6EwMydvjlVE2U29zXQcWpGHWt-ovdbVACNomrOUFKNtF3Y1cNOJzdmtdx8BPejL0LKE~ycv~jZco8vpCDK5LoPAtEPOxhBdcsBsmJXiu1yGgGsuShWZHxX~8uzNEnaClUKvctfFejUt7sU70uqHIbGb1hSTNVIiZdREgXo10Du692u4AVFEIz19d~ePQULTHjj9NtxVFgJyCGQxtpMTnnA3NGmfA1YcIiA81vj1HAtTuFGCvPtUF~c88kND63awFInCTqj8WiE9UpLji~Gu8i8ZWeJGmW6xLEiTQ93Pc6ak18sEO3A3b06p7NI2qpNMLsWiQ__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+
+                    <h3>How i stole Christmas</h3>
+                    <p>
+                        Grinch got caught stealing Christmas spirit—now serving time in Santa's naughty list penitentiary!
+                    </p>
+                </div>
+
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/bba0/8a02/b2cb8e0188145c866eb90e4f2862d1a4?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=V5yUytwwjmHLk~cNxqHuAftJZyC8~tJYUIDSN736gfA6m0n5CRwiLyAY9geW1ZrFoQjUzZzQ6hU7YWo2uJd3f59~F~iXGk5Q3ai8waEynKKJWGZH85XPqHPIMiSwlJjLxblZvkKhoOJ3l5-Jm~EC~Y74GMDkfnFp4cIedsZSKpd3hOtFgiq9OCZkAXbdw2vZUvIUB-74ntD4HCYhEzKxjaE51rwxJYSucbUBW8Vf8kB2ew8o5r89KTJuszSQpONHmQWn0hy5JyJH662-HvBBVHNhY6pf2b8hMSBPbmUZhM2Yl8nI3plp4KiC1wPWW-IYKdBJRlI2cA0S41UXwdvK0Q__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+                    </div>
+
+                    <h3>Spider-Man</h3>
+                    <p>
+                        Spider-Man swinging into a new dimension—glitter, glam, and fabulous web-slinging
+                    </p>
+                </div>
+
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/f690/7778/0adb6b5ad2247b08e45b4da7d3e17c3f?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RpcNSS-0DFMwZmT7M-uqL8XePrUBgxVgQLgVQouDIROwGOYOjfInPxG3incT4AIKtFEVfb7HeRzQYgGm~0DhV-i9RKDSIXj9J2HwiZ56mb1QOzV-Wl7Rel-2s8vyIixysS~UX14Vwg24EKSnMbWe9tdo1PgVYk1ZQI6o2zPkPTEjW9yBvEjRtf1Bg8NF4yUQgGP9eimMTUqL8zJgtfOPGzdqEPX2WLlbNf3XLqFZD5LjMO7vs2gaIR75HbS6d7dvYKt41tXhaIPBcqc8gOn0PYLNzYvyCir9PMKny5bIOX6njeMDGibAvPgMRpXwMDi2UMgmqqCI3H~7KTC~3pEePA__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+                    </div>
+
+                    <h3>Spongebob boss</h3>
+                    <p>
+                        SpongeBob leveled up—straight from Bikini Bottom to blinged-out boss mode!
+                    </p>
+                </div>
+
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/bcd0/16e2/6306eb0a9cf9ba135a52410fab924896?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LZPZac~Dx8OhNQbblC6mnNYEtKJrOrnWVrqk-6WxDk369RP0C9udKHmPWd3IcBb9TjPAOt0Pn4JfiesokUEZHzfBiW1pYj~B3FG6NA8TF4R-465x87rFHWTKwVujHEcFiMlvMQJGPNr2rtyX8WlU5aWFbAHYXZ72xZl3vZjzK5icSzbGxidO81IdpsLiXSU~dPKp9fpE4~a1s18EV4dpjgJ3F4HNRWLVYpEOUPVsr5ShA-1cw-9RixZK-PnWwNT85UO0MgfhhrBS0cDzeuL6yD-aK-uK4E599Ayvh8oBi6-9exxgOdLjJ4viERejUQEUXvWIfeKoKzZekhY64N8i8w__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+
+                    <h3>Spongebob boss</h3>
+                    <p>
+                        When Squidward trades his clarinet for clout and a double cup
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h2>All Themes</h2>
+            </div>
+
+            <div class="themeContainer">
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/0058/76aa/aa34b4f51c138b22be2a9cfb0857d9ec?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nz5clAQN1-y5Cm994LRXmdGKC7m0z7IC8h9SiVFMPxXR1TAqxVDM08ymqrPduO8PkEpM0IEYd3AW9y8b8aBhdwArDNTdUciLw-xoJTuKnEJ2XSjDf35UHvLx5WkgnqipBBz8XALSba1WzK2o8bf4-DCfuUOYeJ84y5rBn-WKbt38CnvkETgyAUadseBJIL~SVSVsMkATaKxovbNXa2XObl~WDTIQ8gWlRyJ6ROxxULX9u74wUf93hqV~7-irZaJhmVrD2aBpIGCT9grTppm-RU~JR0Sz90ZmlXvmarpeW12wdPqrKQJ3cxO9TQgixkgkCLtwdi~67sidws4DgYyGhg__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+                    </div>
+
+                    <h3>Professor Snape</h3>
+                    <p>
+                        When Professor Snape brews a potion for swag and crashes Barbie's dream party!
+                    </p>
+                </div>
+
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/ae54/b55f/0edf1e2df853fd873898d3d06ad378f6?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T-~FdsG7JDO7ygsYjpKqmbdgS1i8b8IipwyZDA6Zp9mOrEwWcynxPxNrW3HXRoRMe4cpr79wbJX6e4dUnE-yQ5SBt~rRMsartN1UKsj~oHkDIS3JneA~aSgf-qkNy0WWdWJF-7dVOQJwmRqg4Sgph0xr6-~yDRjHqPbFThe0IVCt3o6yFFDYyTJWXkofjw3lQIxaaaBJ17AvixFfPsA63Z0YoRDeV9rQInc-zX2-Zpe--I4R-DFay5LciXP6h4JuJ8wNUQ1JJ1U5c9BcZaJ0h1FXm5L7n975MAeSxs1Y0VORQ2xkCmNo30E5Ihx9nhmG3rQf0rq6hWbUkol4Wkoqww__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+                    </div>
+
+                    <h3>Flex mans</h3>
+                    <p>
+                        Harry Potter and the Goblet of Drip: Dobby flexes his freedom in style!
+                    </p>
+                </div>
+
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/fe83/a4a2/5579925bccd69add5605fcbc98e4691f?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bcVDfqc-yEC03ZBMbDKiUjT4MInOzQmmC8gqUgESzYCQBQhUG54zzcAtN3L4lHqLAbNK5m3U9AH339jGLtnCX49QJWlawocNdbcZ1bIQCTbROP-xSu1SFFg5X1ujnMDcjFEZHUQwngDNqihFkrYIPddtWFnGLDhYBiAWCKG0VcAykvhp0F1jSscMWsStGFKyXXEQ4nygiRGJttx2DH89VqPSqPRh8lnoj62JlPDKhdoWlKGi7u43De5yjHl~J9hiWI3nY2qtdyO8Zkuz7kmEC4207kEvyZ4Kl7RUSdCJBt0rqLBjq9IY1aQUIc8EOuPSOh6uLmSbSiUOeKyzbjm0AA__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+
+                    <h3>Dumbledore</h3>
+                    <p>
+                        Abracadabra, but make it fabulous.
+                    </p>
+                </div>
+                
+                <div class="themeBox">
+                    <img src="https://s3-alpha-sig.figma.com/img/eee0/c292/28ced7524ccbdecf5297e9077c7d795a?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kWbxDiEeB9jSueyP33rm2O7NSySBVdkt~ixwcpdVYkqa8I0bf4jcsnVvgafcq9MBBeezLG752c3kxen5YMIjNgKM-mHVjzqrASS9pLB--DGpdemlliBzp6rPrOFnO53FAqpQIQm-PfMlhLKYEbhlTh52yJXLM2oEJFn2USyjLH-l0aKg9JvtBZJKtO23n2gWPlWC-okgpEm5GKLyMS7AcQFgQwD9S0RptMBn5xyt4lgnR-AntS18mjxxmvBp4F75ep~4FlJfnNLPoCZBHShWl8B1URdvZMSWBOD-Wn2ALc6alUWCdwyO29bc1EMsZgKvQDBLZmxcsObyz-0vqKm5MA__" alt="img">
+                
+                    <div class="stars">
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73122 20.8327C7.22415 21.0973 6.61071 21.0507 6.14944 20.7125C5.68817 20.3742 5.45931 19.8032 5.55932 19.24L6.36866 14.6011L2.96124 11.3357C2.54474 10.9385 2.3921 10.3381 2.56833 9.79022C2.74457 9.24234 3.21862 8.84352 3.78858 8.76363L8.51955 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3446 3.82658L15.4805 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4553 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8506 20.7135C17.3893 21.0517 16.7759 21.0983 16.2688 20.8337L12 18.6277L7.73122 20.8327Z" fill="#FAE101" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+
+                        <div class="star">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73121 20.8327C7.22414 21.0973 6.61069 21.0507 6.14942 20.7125C5.68816 20.3742 5.4593 19.8032 5.5593 19.24L6.36864 14.6011L2.96122 11.3357C2.54472 10.9385 2.39208 10.3381 2.56832 9.79022C2.74455 9.24234 3.21861 8.84352 3.78857 8.76363L8.51954 8.08735L10.6554 3.82658C10.9087 3.31558 11.4297 2.99231 12 2.99231C12.5703 2.99231 13.0913 3.31558 13.3445 3.82658L15.4804 8.08735L20.2114 8.76363C20.7814 8.84352 21.2554 9.24234 21.4317 9.79022C21.6079 10.3381 21.4552 10.9385 21.0388 11.3357L17.6313 14.6011L18.4407 19.241C18.5407 19.8042 18.3118 20.3752 17.8505 20.7135C17.3893 21.0517 16.7758 21.0983 16.2688 20.8337L12 18.6277L7.73121 20.8327Z" stroke="#FAE101" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                
+                        </div>
+                    </div>
+
+                    <h3>Avada kedrippa</h3>
+                    <p>
+                        Nagini’s just here for the photo op
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
